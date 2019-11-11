@@ -9,14 +9,13 @@ rules:
       function: pattern
       functionOptions:
         match: "^(\/[a-z{}]+[A-Za-z0-9{}]*[a-z0-9{}]+)+$"
-  my-rule-name:
-    description: Tags must have a description.
-    given: $.tags[*]
-    severity: error
-    recommended: true
-    then:
-      field: description
-      function: truthy
+  # parameter-description:
+  #   description: Parameters must have a description.
+  #   recommended: true
+  #   given: "$..properties.*"
+  #   then:
+  #     field: description
+  #     function: truthy
   api-servers:
     description: "OpenAPI `servers` must be present and non-empty array."
     recommended: true
@@ -32,3 +31,14 @@ rules:
           minItems: 1
           type: array
   operation-operationId-unique: true
+  no-x-headers:
+    description: "Please do not use headers with X-"
+    message: "Headers cannot start with X-, so please find a new name for {{property}}. More: https://tools.ietf.org/html/rfc6648"
+    recommended: true
+    type: style
+    # TODO add encoding headers too "$..content.*.encoding.*.headers"
+    given: "$..parameters.[?(@.in === 'header')].name"
+    then:
+      function: pattern
+      functionOptions:
+        notMatch: "^(x|X)-"
