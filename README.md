@@ -1,6 +1,9 @@
+# Test APIs and lint specifications with Newman and Spectral
+
 ### Pre-requisites for local development
 
-1. Download and install [Node.js](https://nodejs.org/en/) and a package manager like [npm](https://www.npmjs.com/)
+1. Create a Postman account to use the [Postman API](https://docs.api.getpostman.com) to programmatically access data stored in your Postman account. You can skip this step if you're working with standalone files of your Postman collection and OpenAPI specification.
+1. Make sure you have [Node.js](https://nodejs.org/en/) and a package manager like [npm](https://www.npmjs.com/) installed on your machine.
 
 ### For Development
 
