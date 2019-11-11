@@ -4,7 +4,7 @@
 
 ### For Development
 
-    $ git clone git@github.com:loopDelicious/spectral-postman.git // clone this repo
+    $ git clone https://github.com/postmanlabs/spectral-postman.git // clone this repo
     $ cd spectral-postman // change into the new directory
     $ npm install // install dependencies
 
