@@ -3,8 +3,8 @@ set -e
 
 . .env
 
-# ********* RUN TESTS *********
-# run API tests against a local server, failed test(s) return a 1 (error) and terminate this script
+# # ********* RUN TESTS *********
+# # run API tests,failed test(s) return a 1 (error) and terminate this script
 
 # # [GOOD PRACTICE] run your tests against a local server
 # # requires your Postman collection and environment files to be located within the project directory
@@ -14,10 +14,10 @@ set -e
 # # [BETTER PRACTICE] run your tests using the Postman API (https://docs.api.getpostman.com/) to retrieve the latest versions of your collection and environment
 # # requires collection UID, environment UID, and your Postman API key
 # # formatted like: newman run <authenticated-GET-collection-request> -e <authenticated-GET-environment-request>
-newman run https://api.getpostman.com/collections/${POSTMAN_COLLECTION_UID}?apikey=${POSTMAN_API_KEY}
+newman run https://api.getpostman.com/collections/${POSTMAN_COLLECTION_UID}?apikey=${POSTMAN_API_KEY} -e https://api.getpostman.com/environments/${POSTMAN_ENVIRONMENT_UID}?apikey=${POSTMAN_API_KEY}
 
-# ********* RUN LINTER *********
-# an example of an OpenAPI v3 file from https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml
+# # ********* RUN LINTER *********
+# # lint specification file, errors and warnings will terminate this script
 
 # # [GOOD PRACTICE] lint a local specification file
 # # requires your API specification file to be located within the project directory
