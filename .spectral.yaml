@@ -1,0 +1,34 @@
+rules:
+  paths-camel-case:
+    description: Should paths be camel-case.
+    message: "{{property}} is not camel-case: {{error}}"
+    severity: warn
+    recommended: true
+    given: $.paths[*]~
+    then:
+      function: pattern
+      functionOptions:
+        match: "^(\/[a-z{}]+[A-Za-z0-9{}]*[a-z0-9{}]+)+$"
+  my-rule-name:
+    description: Tags must have a description.
+    given: $.tags[*]
+    severity: error
+    recommended: true
+    then:
+      field: description
+      function: truthy
+  api-servers:
+    description: "OpenAPI `servers` must be present and non-empty array."
+    recommended: true
+    formats: ["oas3"]
+    given: "$"
+    then:
+      field: servers
+      function: schema
+      functionOptions:
+        schema:
+          items:
+            type: object
+          minItems: 1
+          type: array
+  operation-operationId-unique: true
