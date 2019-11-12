@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "e68d935b-1a64-4690-84c2-e53f3a760f41",
 		"name": "Cosmos",
-		"description": "A sample API that retrieves constellations as an example to demonstrate features in the OpenAPI 3.0 specification.\n\nThis collection was generated from this OpenAPI specification file as part of this blog post about [title]().\n\n[github repo]\n[link to article]\n\n### Get started\n1. Make sure you have a Postman environment called `cosmos` selected in the Postman app. There should be a key `baseUrl` with the value `https://e8c086f7-a5c9-4752-b81f-bfac0d0dc5d2.mock.pstmn.io`.\n ",
+		"description": "A sample API that retrieves constellations as an example to demonstrate features in the OpenAPI 3.0 specification.\n\n**Get started**: Make sure you have a Postman environment called `cosmos` selected in the Postman app. There should be a key `baseUrl` with the value `https://e8c086f7-a5c9-4752-b81f-bfac0d0dc5d2.mock.pstmn.io`.\n\nThis collection was generated from an OpenAPI specification file as described in this blog post about [Bringing law and order to APIs with OpenAPI Specifications](https://medium.com/@joycelin.codes/api-specifications-d87588ac874). Follow along with [this example project](https://github.com/postmanlabs/spectral-postman).\n ",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
