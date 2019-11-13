@@ -2,21 +2,20 @@
   "name": "spectral-postman",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "./bin/deploy.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loopDelicious/spectral-postman.git"
+    "url": "git+https://github.com/postmanlabs/spectral-postman.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/loopDelicious/spectral-postman/issues"
+    "url": "https://github.com/postmanlabs/spectral-postman/issues"
   },
-  "homepage": "https://github.com/loopDelicious/spectral-postman#readme",
+  "homepage": "https://github.com/postmanlabs/spectral-postman#readme",
   "dependencies": {
     "@stoplight/spectral": "^4.2.0",
     "newman": "^4.5.5"
