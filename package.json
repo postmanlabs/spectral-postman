@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/postmanlabs/spectral-postman.git"
+    "url": "https://github.com/postmanlabs/spectral-postman.git"
   },
   "author": "",
   "license": "ISC",
