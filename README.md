@@ -2,11 +2,17 @@
 
 **Cosmos** is a sample API that retrieves constellations as an example to demonstrate features in the OpenAPI 3.0 specification. This project is part of a blog post about [Bringing law and order to APIs with OpenAPI Specifications](https://medium.com/@joycelin.codes/api-specifications-d87588ac874).
 
-Option 1) **Explore in Postman**: explore this collection (generated from an OpenAPI specification file) by clicking the orange **Run in Postman** button below. Make sure you have [a Postman environment](https://learning.getpostman.com/docs/postman/environments-and-globals/manage-environments/) called `cosmos` selected in the Postman app. There should be a key `baseUrl` with the value `https://e8c086f7-a5c9-4752-b81f-bfac0d0dc5d2.mock.pstmn.io`.
+![OpenAPI Newman Spectral logos](https://cdn-images-1.medium.com/max/1200/1*yAeA5MTf6B0XO5MRXhFDwg.png)
+
+## Option 1 
+**Explore in Postman**: explore this collection (generated from an OpenAPI specification file) by clicking the orange **Run in Postman** button below. Make sure you have [a Postman environment](https://learning.getpostman.com/docs/postman/environments-and-globals/manage-environments/) called `cosmos` selected in the Postman app. There should be a key `baseUrl` with the value `https://e8c086f7-a5c9-4752-b81f-bfac0d0dc5d2.mock.pstmn.io`.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/83a63bdb74171c8dbd30#?env%5Bcosmos%5D=W3sia2V5IjoiYmFzZVVybCIsInZhbHVlIjoiaHR0cHM6Ly9lOGMwODZmNy1hNWM5LTQ3NTItYjgxZi1iZmFjMGQwZGM1ZDIubW9jay5wc3Rtbi5pbyIsImVuYWJsZWQiOnRydWV9XQ==)
 
-Option 2) **Explore in terminal**: follow the quick start below to set up this example project in your terminal or continuous integration workflow.
+## Option 2 
+**Explore in terminal**: follow the quick start below to set up this example project in your terminal or continuous integration workflow.
+
+![run tests and lint specs](https://cdn-images-1.medium.com/max/2400/1*f6mAmgWiUZmgV79-VBaFsQ.gif)
 
 # Quick Start
 
