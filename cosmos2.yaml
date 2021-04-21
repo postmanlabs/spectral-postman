@@ -1,0 +1,95 @@
+openapi: "3.0.0"
+info:
+  version: 1.1.0
+  title: Cosmos
+  description: A sample API that retrieves constellations as an example to demonstrate features in the OpenAPI 3.0 specification
+  license:
+    name: MIT
+servers:
+  - url: https://2a6e0231-05f5-4028-8571-cbce1dcfb5b5.mock.pstmn.io
+paths:
+  /cosmos:
+    get:
+      description: Returns all constellations in this sample dataset
+      summary: List all cosmos
+      operationId: listCosmos
+      tags:
+        - cosmos
+      responses:
+        "200":
+          description: An array of constellations
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cosmos"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /cosmos/{cosmoId}:
+    get:
+      description: Returns a constellation based on a single ID
+      summary: Info for a specific constellation
+      operationId: showCosmoById
+      tags:
+        - cosmos
+      parameters:
+        - name: cosmoId
+          in: path
+          required: true
+          description: The id of the constellation to retrieve
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cosmo"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Cosmos:
+      type: array
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tag:
+          type: string
+    Cosmo:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tag:
+          type: string
+        description:
+          type: string
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
