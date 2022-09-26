@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/postmanlabs/spectral-postman#readme",
   "dependencies": {
-    "@stoplight/spectral": "^4.2.0",
+    "@stoplight/spectral": "^6.5.0",
     "newman": "^4.5.5"
   }
 }
